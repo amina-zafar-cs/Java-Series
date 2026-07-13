@@ -1,0 +1,76 @@
+import java.util.*;
+public class ClassObject{
+
+	public static void main(String args[]){
+
+		
+		Pen pencil =new Pen();
+		//pencil.Pen("Green");
+
+		
+
+		Pen marker =new Pen("Red");
+
+		Pen pen=new Pen(5);
+
+		
+
+		System.out.println( marker .getColor());
+		System.out.println( pen .getTip());
+
+		System.out.println( marker .getTip());
+		System.out.println( pen .getColor());	
+
+		System.out.println( pencil .getColor());		
+		
+		
+		
+	}
+		
+	
+
+}
+
+
+class Pen{
+
+	int tip;
+	String color;
+
+	/*Pen(){
+
+		System.out.println("This ios non-parameterized and default constructor");
+	}*/
+
+	 Pen(String color){
+
+		this.color=color;
+
+
+
+
+	}
+
+	Pen(int tip){
+
+		this.tip=tip;
+
+
+
+	}
+
+	String getColor(){
+			return color;
+
+	}
+
+	int getTip(){
+			return tip;
+
+	}
+
+
+
+
+
+}
