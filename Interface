@@ -1,0 +1,70 @@
+import java.util.*;
+public class Interface{
+
+	public static void main(String args[]){
+
+		
+		Queen q1=new Queen();
+		q1.walk();
+		King k1=new King();
+		k1.walk();
+		
+		
+		
+		
+	}
+		
+	
+
+}
+
+
+interface  chessPlayer{
+
+	
+
+	void walk();
+
+
+
+
+}
+
+class Queen implements chessPlayer{
+
+	
+	public void walk(){
+
+		
+		System.out.println(" Left, right ");
+
+	}
+
+	
+
+
+
+}
+
+class King implements chessPlayer{
+
+	
+	public void walk(){
+
+		
+		System.out.println(" Up, Down");
+
+	}
+
+	
+
+
+
+}
+
+
+
+
+
+
+
