@@ -1,0 +1,83 @@
+import java.util.*;
+public class Super{
+
+	public static void main(String args[]){
+	
+		Dog d1=new Dog();
+		d1.sound();
+		
+		
+		
+		
+		
+	}
+		
+	
+
+}
+
+
+class Animal{
+
+	String color="brown";
+
+	Animal(){
+		
+		System.out.println("Animal Constructotr");
+		
+
+
+	}
+
+	void sound(){
+
+		System.out.println("Just sound");
+
+	}
+
+}
+
+
+class Dog extends Animal{
+
+	
+	String color="White";
+
+	Dog(){
+
+		// Parent Constructor
+		super();
+	
+		System.out.println("Dog constructor");
+
+
+
+	}
+	void sound(){
+
+		System.out.println("Barking");
+
+		System.out.println("color is: "+super.color);
+
+		super.sound();
+
+
+	}
+
+	
+	
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
