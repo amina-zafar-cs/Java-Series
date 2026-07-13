@@ -1,0 +1,84 @@
+import java.util.*;
+public class Inheritance{
+
+	public static void main(String args[]){
+
+		
+	Bird b1=new Bird();
+
+	b1 .color="skin";
+	b1 .fly();
+	b1 .eat();
+	b1 .breath();
+	b1 .wings=2;
+	b1 .fly();
+
+	Crow c1=new Crow();
+
+	c1.color="skin";
+	c1.eat();
+	c1.breath();
+	
+	c1.sound();
+		
+		
+		
+		
+	}
+		
+	
+
+}
+
+
+class Animal{
+
+	String color;
+	void eat(){
+
+		System.out.println("eats");
+
+
+	}
+
+	void breath(){
+
+		System.out.println(" breath");
+
+
+	}
+
+
+
+
+}
+
+class Bird extends Animal{
+
+	int wings;
+	void fly(){
+
+		
+		System.out.println(" fly ");
+
+	}
+
+
+
+}
+
+class Crow extends Animal{
+
+	int age;
+	void sound(){
+
+
+		System.out.println("kawin kawin");
+
+	}
+
+
+
+
+
+}
