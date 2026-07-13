@@ -1,0 +1,71 @@
+import java.util.*;
+public class Interface_mul_Inher{
+
+	public static void main(String args[]){
+	
+		Bear b1=new Bear();
+		b1.meat();
+		b1.herbs();
+		
+		
+		
+		
+	}
+		
+	
+
+}
+
+
+interface  Carnivor{
+
+	
+
+	void meat();
+
+
+
+
+}
+
+interface  Herbivore{
+
+	
+
+	void herbs();
+
+
+
+
+}
+
+class Bear implements Carnivor,Herbivore{
+
+	
+	public void meat(){
+
+		
+		System.out.println(" eat meat ");
+
+	}
+
+	public void herbs(){
+
+		
+		System.out.println(" eat herbs ");
+
+	}
+	
+
+
+
+}
+
+
+
+
+
+
+
+
+
