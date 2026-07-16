@@ -1,0 +1,38 @@
+Problem: Convert binary into decimal
+import java.util.Scanner;
+public class BinaryToDecimal{
+
+	public static void main(String args[]){
+
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Plz enter a number: ");
+		int number=sc.nextInt();
+		
+		System.out.print("Decimal of "+number+" is: "+binaryToDec(number));
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	public static int binaryToDec(int n){
+		int digit, dec=0, index=0;
+		while(n>0){
+		digit=n%10;
+		
+		dec=dec+digit*(int)Math.pow(2,index);
+		n=n/10;
+		
+		index++;
+		
+		}
+
+		return dec;
+
+	}
+	
+
+}
