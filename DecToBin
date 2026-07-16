@@ -1,0 +1,38 @@
+Problem: convert a decimal number into binary
+import java.util.Scanner;
+public class DecToBinary{
+
+	public static void main(String args[]){
+
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Plz enter a number: ");
+		int number=sc.nextInt();
+		
+		System.out.print("Binary of "+number+" is: "+DecToBin(number));
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	public static int DecToBin(int n){
+		int digit, bin=0, index=0;
+		while(n>0){
+		digit=n%2;
+		
+		bin=bin+digit*(int)Math.pow(10,index);
+		n=n/2;
+		
+		index++;
+		
+		}
+
+		return bin;
+
+	}
+	
+
+}
